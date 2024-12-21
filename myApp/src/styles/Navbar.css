@@ -1,0 +1,92 @@
+/* Logo responsive ayarları */
+.navbar-brand img {
+  max-width: 350px;
+  /* Resmin genişliği 350px'e kadar genişleyebilir */
+  height: auto;
+  /* Yükseklik orantılı olarak ayarlanır */
+}
+
+
+
+
+
+/* 376px ve daha küçük ekranlarda logo boyutunu küçült */
+@media (max-width: 376px) {
+  .navbar-brand img {
+    max-width: 250px;
+    /* 376px altındaki ekranlarda 250px'e kadar küçülür */
+  }
+}
+
+/* Navbar yazıları için responsive font boyutları */
+.navbar-nav .nav-link {
+  font-size: 16px;
+  /* Varsayılan yazı boyutu */
+}
+
+
+
+
+
+
+/* Ekran genişliği 576px ve daha küçük olduğunda icon boyutunu daha da küçült */
+@media (max-width: 576px) {
+  .navbar-nav .nav-item img .btn {
+    max-height: 25px;
+    /* 576px altındaki ekranlarda icon boyutunu daha da küçültür */
+    font-size: 12px;
+    /* 576px altındaki ekranlarda yazı boyutunu daha da küçültür */
+
+  }
+
+  .btn {
+    max-width: 55px;
+  }
+
+  .img-fluid {
+    width: 125px;
+  }
+
+}
+
+
+/* Ekran genişliği 768px ve daha küçük olduğunda icon boyutunu küçült */
+@media (max-width: 768px) {
+  .navbar-nav .nav-item img .nav-link .btn {
+    max-height: 30px;
+    /* 768px altındaki ekranlarda icon boyutunu küçültür */
+    font-size: 10px;
+    /* 768px altındaki ekranlarda yazı boyutunu küçültür */
+
+  }
+
+.img-fluid{
+  width: 125px;
+}
+
+  .btn {
+    max-width: 55px;
+  }
+}
+
+
+
+/* Ekran genişliği 1024 ve daha küçük olduğunda icon boyutunu küçült */
+@media (max-width: 983) {
+ .img-fluid{
+  width: 100px;
+  margin-left: -150px;
+ }
+
+  
+
+  
+}
+
+
+
+/* Navbar'da tüm öğelerin hizalanmasını sağlar */
+.navbar-nav {
+  margin-right: auto;
+  /* Sağdaki öğeleri sola hizalar */
+}

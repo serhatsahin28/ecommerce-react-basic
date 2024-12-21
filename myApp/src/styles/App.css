@@ -1,0 +1,11 @@
+
+body{
+  /* background: linear-gradient(to right, #0d47a1, #1976d2, #42a5f5); */
+  background: linear-gradient(to right,rgb(5 116 188),rgb(7 118 190), rgb(9 118 189),rgb(13 120 190),rgb(39 135 200),rgb(91 162 219),rgb(122 177 229),rgb(142 189 237));
+
+}
+ul {
+  list-style-type: none; /* Noktaları kaldırır */
+  padding-left: 0; /* Soldan boşlukları kaldırır */
+}
+
