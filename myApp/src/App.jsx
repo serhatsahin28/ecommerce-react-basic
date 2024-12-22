@@ -8,7 +8,7 @@ import Carousel from 'react-bootstrap/Carousel';
 function App() {
 
   return (
-    <Router basename="/e-commerce/">
+    <Router>
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} /> {/* Home sayfası varsayılan olarak açılır */}
