@@ -1,6 +1,8 @@
 import React from 'react';
 import "../../styles/home.css";
-import logo from "../../../img/fr-flag.png"; // Kartın üstündeki logo
+import Security from "../../../img/Security.png"; // Kartın üstündeki logo
+import Kullanıcı from "../../../img/Kullanıcı.png"; // Kartın üstündeki logo
+import Etkileşim from "../../../img/Etkileşim.png"; // Kartın üstündeki logo
 
 function Body2() {
   return (
@@ -22,7 +24,7 @@ function Body2() {
           <div className="col-md-4">
             <div className="card text-center">
               <img
-                src={logo}
+                src={Security}
                 className="card-img-top p-3"
                 alt="Logo 1"
                 style={{ height: "100px", objectFit: "contain" }}
@@ -40,7 +42,7 @@ function Body2() {
           <div className="col-md-4">
             <div className="card text-center">
               <img
-                src={logo}
+                src={Kullanıcı}
                 className="card-img-top p-3"
                 alt="Logo 2"
                 style={{ height: "100px", objectFit: "contain" }}
@@ -60,7 +62,7 @@ ile herkes için erisilebilir
           <div className="col-md-4">
             <div className="card text-center">
               <img
-                src={logo}
+                src={Etkileşim}
                 className="card-img-top p-3"
                 alt="Logo 3"
                 style={{ height: "100px", objectFit: "contain" }}

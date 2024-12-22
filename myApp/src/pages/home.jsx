@@ -1,4 +1,5 @@
 import Navbar from '../components/navbar';
+import Footer from '../components/footer';
 import Carousel1 from '../components/home/carousel1';
 import Carousel2 from '../components/home/carousel2';
 import Body1 from '../components/home/body1';
@@ -24,6 +25,12 @@ function Home() {
   <br />
 
   <Body2 />
+  <br />
+  <br />  <br />
+  <br />
+  <Footer />
+
+
 
   </>
 

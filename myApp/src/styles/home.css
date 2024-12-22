@@ -17,13 +17,17 @@
     margin-top: 10px;
 }
 
-h1 {
+.carouselh1 {
     margin-top: -300px;
     position: relative;
     margin-left: -10%;
     max-width: 65%;
     font-size: 35px;
 }
+
+
+
+
 
 p {
     position: relative;
@@ -70,17 +74,21 @@ p {
         font-size: 10px;
     }
 
- 
+
     /* .buy için düzenleme */
     .buy {
         position: relative;
         background-color: white;
         border-radius: 15px;
-        margin: 20px 0; /* Yukarıdan ve aşağıdan boşluk */
+        margin: 20px 0;
+        /* Yukarıdan ve aşağıdan boşluk */
         font-size: 10px;
-        width: auto; /* Genişliği içeriğe göre ayarla */
-        padding: 10px; /* İç boşluk ekle */
-        text-align: center; /* İçerikleri ortala */
+        width: auto;
+        /* Genişliği içeriğe göre ayarla */
+        padding: 10px;
+        /* İç boşluk ekle */
+        text-align: center;
+        /* İçerikleri ortala */
     }
 }
 
@@ -175,53 +183,85 @@ p {
 
 /* Body1 için özel stil */
 .body1-container {
-    background-color: white;  /* Sayfaya özel beyaz arka plan */
-    padding: 20px;  /* İçeriği rahat gösterecek padding */
-    min-height: 100px;  /* Sayfa yüksekliğini tamamen kaplaması için */
+    background-color: white;
+    /* Sayfaya özel beyaz arka plan */
+    padding: 20px;
+    /* İçeriği rahat gösterecek padding */
+    min-height: 100px;
+    /* Sayfa yüksekliğini tamamen kaplaması için */
 }
 
 /* Container içindeki özel stil */
 .body1-container .container {
-    background-color: #fff;  /* Gerekiyorsa container'a beyaz arka plan */
+    background-color: #fff;
+    /* Gerekiyorsa container'a beyaz arka plan */
 }
 
 /* Resimlerin boyutunu ayarlama */
 .row>.col>img {
-    height: 50px; /* Resimlerin boyutunu 50px'e ayarlıyoruz */
+    height: 50px;
+    /* Resimlerin boyutunu 50px'e ayarlıyoruz */
 }
-.row>.col>p{
+
+.row>.col>p {
     color: rgb(31, 91, 176);
-    margin-left: 20px!important;
+    margin-left: 20px !important;
     margin-top: 15px !important;
     font-size: 15px;
 }
 
+    
+
+    .carousel-indicators .active {
+        background-color: #ff0000;
+        /* Aktif nokta rengi */
+        opacity: 1;
+    }
+
+    /* Carousel Göstergelerini Carousel'in Altına Al */
+    .carousel-indicators {
+        border-radius: 15px;
+    }
+
+
+
+/* Body1 için özel stil Bitiş */
 
 
 /*Body2 sayfası Başlangıç*/
 
 .card {
-    background-color: transparent; /* Şeffaf arka plan */
-    border: 1px solid rgba(255, 255, 255, 0.249); /* İsteğe bağlı: Çerçeveyi kaldırmak için */
+    background-color: transparent;
+    /* Şeffaf arka plan */
+    border: 1px solid rgba(255, 255, 255, 0.249);
+    /* İsteğe bağlı: Çerçeveyi kaldırmak için */
     border-radius: 15px;
     height: 95%;
-    
-  }
+
+}
 
 
 .body2-container {
-    background: linear-gradient(to right,rgb(5 116 188),rgb(7 118 190), rgb(9 118 189),rgb(13 120 190),rgb(39 135 200),rgb(91 162 219),rgb(122 177 229),rgb(142 189 237));
+    background: linear-gradient(to right, rgb(5 116 188), rgb(7 118 190), rgb(9 118 189), rgb(13 120 190), rgb(39 135 200), rgb(91 162 219), rgb(122 177 229), rgb(142 189 237));
 
-    margin-top: 250px; /* Üstten 150px boşluk bırak */
-    padding: 20px; /* İçeriğin rahat görünmesi için padding */
-  }
+    margin-top: 250px;
+    /* Üstten 150px boşluk bırak */
+    padding: 20px;
+    /* İçeriğin rahat görünmesi için padding */
+}
 
- .body2-title{
-
- 
+.body2-title {
+    /*body2*/
+    margin-top: -280px;
+    position: relative;
+    margin-left: -10%;
+    max-width: 65%;
+    font-size: 35px;
     margin-left: auto;
     margin-right: auto;
-} 
+}
+
+
 .body2-subtitle {
 
     margin-top: 25px;
@@ -229,7 +269,7 @@ p {
 
 /* home.css dosyasına ekleyin */
 @media (max-width: 768px) {
-    .body2-title{
+    .body2-title {
         margin-left: 50px;
     }
 
@@ -237,11 +277,10 @@ p {
         margin-left: -20px !important;
         max-width: 100%;
     }
-  
 
 
-  }
-  
+
+}
+
 
 /*Body2 sayfası Bitiş*/
-

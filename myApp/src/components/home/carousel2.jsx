@@ -1,6 +1,14 @@
 import React, { useState, useEffect } from "react";
 import "../../styles/home-carousel2.css";
 import img from "../../../img/fr-flag.png"; // Resmi doğru bir şekilde import ediyoruz.
+
+import Lock from "../../../img/lock.png"; // Resmi doğru bir şekilde import ediyoruz.
+import Ai from "../../../img/AI.png"; // Resmi doğru bir şekilde import ediyoruz.
+import Share from "../../../img/Share.png"; // Resmi doğru bir şekilde import ediyoruz.
+import Pro from "../../../img/pro.png"; // Resmi doğru bir şekilde import ediyoruz.
+
+
+
 import link1 from "../../../img/export.png"; // Resmi doğru bir şekilde import ediyoruz.
 import arrow from "../../../img/arrow.png"; // Resmi doğru bir şekilde import ediyoruz.
 import rightArrow from "../../../img/right-arrow.png"; // Resmi doğru bir şekilde import ediyoruz.
@@ -11,16 +19,16 @@ function Carousel2() {
   const [visibleCount, setVisibleCount] = useState(5); // Dinamik olarak ayarlanan görünür öğe sayısı
 
   const items = [
-    { logo: img, text: "Emko SmartLock Pro", text2: "EmkoBoard Kilit Uygulaması" },
-    { logo: img, text: "Emko AI Yapay Zeka", text2: "EmkoBoardlar için Hazirlanmis Yapay Zeka Destegi" },
-    { logo: img, text: "Bytello Share", text2: "Ekran Paylaşma Uygulaması" },
-    { logo: img, text: "Bytello Class Pro", text2: "EmkoBoard'lar için Hazırlanmış Yapay Zeka Desteği" },
-    { logo: img, text: "Emko AI Yapay Zek", text2: "EmkoBoard'lar için Hazırlanmış Yapay Zeka Desteği" },
-    { logo: img, text: "Emko SmartLock Pro", text2: "EmkoBoard Kilit Uygulaması" },
-    { logo: img, text: "Emko AI Yapay Zeka", text2: "EmkoBoardlar için Hazirlanmis Yapay Zeka Destegi" },
-    { logo: img, text: "Bytello Share", text2: "Ekran Paylaşma Uygulaması" },
-    { logo: img, text: "Bytello Class Pro", text2: "EmkoBoard'lar için Hazırlanmış Yapay Zeka Desteği" },
-    { logo: img, text: "Emko AI Yapay Zek", text2: "EmkoBoard'lar için Hazırlanmış Yapay Zeka Desteği" }
+    { logo: Lock, text: "Emko SmartLock Pro", text2: "EmkoBoard Kilit Uygulaması" },
+    { logo: Ai, text: "Emko AI Yapay Zeka", text2: "EmkoBoardlar için Hazirlanmis Yapay Zeka Destegi" },
+    { logo: Share, text: "Bytello Share", text2: "Ekran Paylaşma Uygulaması" },
+    { logo: Pro, text: "Bytello Class Pro", text2: "EmkoBoard'lar için Hazırlanmış Yapay Zeka Desteği" },
+    { logo: Ai, text: "Emko AI Yapay Zek", text2: "EmkoBoard'lar için Hazırlanmış Yapay Zeka Desteği" },
+    { logo: Lock, text: "Emko SmartLock Pro", text2: "EmkoBoard Kilit Uygulaması" },
+    { logo: Ai, text: "Emko AI Yapay Zeka", text2: "EmkoBoardlar için Hazirlanmis Yapay Zeka Destegi" },
+    { logo: Share, text: "Bytello Share", text2: "Ekran Paylaşma Uygulaması" },
+    { logo: Pro, text: "Bytello Class Pro", text2: "EmkoBoard'lar için Hazırlanmış Yapay Zeka Desteği" },
+    { logo: Ai, text: "Emko AI Yapay Zek", text2: "EmkoBoard'lar için Hazırlanmış Yapay Zeka Desteği" }
   ];
 
   // Ekran boyutuna göre visibleCount'ı güncelleme
