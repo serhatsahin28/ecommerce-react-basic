@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import "../../styles/home-carousel2.css";
-import img from "../../../img/fr-flag.png"; // Resmi doğru bir şekilde import ediyoruz.
 
 import Lock from "../../../img/lock.png"; // Resmi doğru bir şekilde import ediyoruz.
 import Ai from "../../../img/AI.png"; // Resmi doğru bir şekilde import ediyoruz.

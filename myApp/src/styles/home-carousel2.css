@@ -106,10 +106,11 @@
 }
 
 /* Responsive Media Queries */
-@media (max-width: 1024px) {
+@media (max-width: 1268px) {
     .carousel2-container {
         width: 90%;
         margin-left: 0;
+
     }
 
     .carousel2-item {
@@ -123,48 +124,107 @@
     }
 
     .carousel2-item>img {
-        margin-left: -150px;
+        margin-left: -128px;
         height: 55px;
     }
+
     .carousel2-item>p {
-        max-width: 250px !important;
+        position: relative;
+        max-width: 150px !important;
+        margin-left: 130px !important;
+
     }
 
 }
 
 @media (max-width: 768px) {
+
+    /* Carousel item'larının genişliğini ve padding'ini düzenle */
     .carousel2-item {
         width: calc(50% - 20px);
+        /* İki öğe yan yana gelsin, 20px boşluk bırak */
         padding: 8px;
+        box-sizing: border-box;
+        /* Padding'i genişlik ve yüksekliğe dahil et */
     }
 
+    /* Carousel butonlarını responsive yap */
     .carousel2-btn {
         font-size: 14px;
         padding: 6px 10px;
     }
 
+    /* Resimleri responsive yap */
     .carousel2-item>img {
-        height: 75px;
-        margin-left: -150px;
+        height: auto;
+        /* Resmin yüksekliğini otomatik yap */
+        width: 30%;
+        /* Resmi kutunun genişliğine göre orantılı yap */
+        max-height: 50px;
+        /* Maksimum yükseklik 50px olacak */
+        margin-left: 0;
+        /* Margin'i sıfırladım */
     }
 
+    /* Başlıkları responsive yap */
     .carousel2-item>h6 {
-        font-size: 15px;
+        font-size: 10px;
+        margin-top: 60px;
+        /* Negatif margin yerine normal bir üst margin kullan */
+        margin-left: -10px;
     }
 
+    /* Paragraf kutucuklarını responsive yap */
     .carousel2-item>p {
-        height: 75px;
-        margin-left: -150px;
-        margin-top:15px !important;
+        position: absolute;
+        text-align: center;
+        font-size: 10px;
+        /* Yazı boyutunu biraz büyüt */
+        height: auto;
+        /* Sabit yükseklik yerine içeriğe göre boyutlansın */
+        width: 80%;
+        /* Yüzde olarak genişlik, daha esnek olacak */
+        margin-left: 35px !important;
+        /* Ortalamak için margin-left ve right kullan */
+        margin-right: auto;
+        margin-top: 10px;
+        padding: 5px;
+        /* İçerik etrafına padding ekle */
+        color: white;
+        /* Yazıyı beyaz yap */
     }
 
+    /* Flex düzeni ile tüm öğeleri düzgün hizala */
+    .carousel2-item {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        /* İçeriği dikeyde ortala */
+        align-items: center;
+        /* Yatayda ortala */
+    }
 }
 
-@media (max-width: 480px) {
+
+@media (max-width: 468px) {
     .carousel2-item {
         width: 100%;
         padding: 5px;
     }
+
+    .carousel2-item>img {
+        height: 55px;
+        width: 75px;
+    }
+
+
+    .carousel2-item>p {
+        position: absolute;
+        margin-top: 0px!important;
+        margin-left: 10px !important;
+    }
+
+
 
     .carousel2-btn {
         font-size: 12px;

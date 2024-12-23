@@ -116,7 +116,10 @@
 @media (max-width: 768px) {
 
 
-  
+  .footerP{
+    width:100%;
+    font-size: 12px;
+  }
   .footer-box {
     flex-direction: column;
     gap: 30px;

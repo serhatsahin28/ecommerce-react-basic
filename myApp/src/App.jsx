@@ -11,7 +11,7 @@ function App() {
     <Router>
       <Navbar />
       <Routes>
-        <Route path="/e-commerce/" element={<Home />} /> {/* Home sayfası varsayılan olarak açılır */}
+        <Route path="/e-commerce" element={<Home />} /> {/* Home sayfası varsayılan olarak açılır */}
       </Routes>
     </Router>
 
