@@ -116,28 +116,43 @@
 @media (max-width: 768px) {
 
 
-  .footerP{
-    width:100%;
-    font-size: 12px;
+
+  .footerP {
+    position: absolute;
+    width: 80%;
+    font-size: 15px;
+    margin-top: 150px !important;
+    margin-left: -50px !important;
   }
+
   .footer-box {
     flex-direction: column;
-    gap: 30px;
-    margin-left:200px;
+    gap: 0px;
   }
 
   .footer-logo {
     width: 100%;
     text-align: center;
-    margin-left:-100px;
+    margin-left: 35px;
+    margin-top: -15px;
   }
+
+  .footerIconBox {
+
+    margin-top: 150px !important;
+  }
+
 
   .footer-sections {
-    width: 100%;
-    flex-direction: column;
+      display: flex;
+      flex-direction: column; 
+      justify-content: center; 
+      align-items: center; 
+      padding: 10px;
+    
   }
 
-  .footer-section {
-    width: 100%;
-  }
+
+
+
 }

@@ -2,7 +2,7 @@ import React from "react";
 import "../styles/footer.css";
 import emko from "../../img/emko.jpg";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt,FaFacebook, FaInstagram, FaTwitter, FaLinkedin } from 'react-icons/fa';
+import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt, FaFacebook, FaInstagram, FaTwitter, FaLinkedin } from 'react-icons/fa';
 
 const Footer = () => {
     return (
@@ -36,18 +36,18 @@ const Footer = () => {
                         <img src={emko} style={{ height: "150px", width: "200px" }} alt="Logo" className="img-fluid" />
                         <p className="footerP ">EmkoLogin, EmkoBoard'larinizin tüm yazilim çözümlerini tek bir çati altinda toplayan yenilikçi bir platformdur. Bu sistem, kullanicilarin ve kurumlarin akilli tahtalar üzerinden en yüksek verimi almasini saglamak için tasarlanmistir.</p>
                         <div>
-                        <a href="#" className="mr-2"><FaFacebook className=""> </FaFacebook></a>
-                        <a href="#" className="mr-2"> <FaTwitter className=""> </FaTwitter></a>
-                        <a href="#" className="mr-2"> <FaLinkedin className=""> </FaLinkedin></a>
-                        <a href="#" className="mr-2"><FaInstagram className=""> </FaInstagram></a>
+                            <a href="#" className="mr-2"><FaFacebook className="footerIconBox"> </FaFacebook></a>
+                            <a href="#" className="mr-2"> <FaTwitter className="footerIconBox"> </FaTwitter></a>
+                            <a href="#" className="mr-2"> <FaLinkedin className="footerIconBox"> </FaLinkedin></a>
+                            <a href="#" className="mr-2"><FaInstagram className="footerIconBox"> </FaInstagram></a>
 
-                       
+
                         </div>
                     </div>
 
                     {/* Orta ve Sağ Kısımlar: Uygulamalar, Hakkında, İletişim */}
                     <div className="footer-sections mt-5">
-                        <div className="footer-section">
+                        <div className="footer-section app-section">
                             <h5>Uygulamalar</h5>
                             <ul className="list-unstyled">
                                 <li>Emko Start Lock Pro</li>
@@ -59,7 +59,7 @@ const Footer = () => {
                             </ul>
                         </div>
 
-                        <div className="footer-section">
+                        <div className="footer-section about-section">
                             <h5>Hakkında</h5>
                             <ul className="list-unstyled">
                                 <li>S.S.S</li>

@@ -5,7 +5,7 @@
     margin-right: 13%;
     border-radius: 15px;
     opacity: 0.9;
-    height: 350px;
+    height: 450px;
 
 }
 
@@ -42,11 +42,11 @@ p {
     background-color: white;
     border-radius: 15px;
     position: relative;
-    margin-top: -20%;
+    margin-top: -10%  !important;
     margin-left: 5%;
     max-width: 40%;
     color: black;
-    width: 10%;
+    width: 20%;
 }
 
 @media (max-width: 576px) {
@@ -94,21 +94,34 @@ p {
 
 
 
+  
+  .carousel-inner {
+    overflow: visible !important; /* Varsayılan Bootstrap stillerini geçersiz kıl */
+  }
+  
+  
+ 
+  
 
+  
 
 
 @media (max-width: 768px) {
 
+
+   
+
     .carousel-item img {
         position: relative;
-        height: 350px;
-        width: 45%;
-        margin-left: 75% !important;
+
+        height: 300px !important;
+        width: 45% !important;
+        margin-left: 65% !important;
         margin-top: 10px;
     }
 
     h1 {
-        margin-top: -300px;
+        margin-top: -250px !important;
         position: relative;
         margin-left: -10%;
         max-width: 65%;
@@ -128,7 +141,7 @@ p {
         background-color: white;
         border-radius: 15px;
         position: relative;
-        margin-top: -60% !important;
+        margin-top: -45% !important;
         margin-left: 15% !important;
         max-width: 40%;
         color: black;
@@ -140,6 +153,7 @@ p {
 
 @media (max-width: 1024px) {
 
+ 
 
     .carousel-item img {
         position: relative;
@@ -220,18 +234,18 @@ p {
     font-size: 15px;
 }
 
-    
 
-    .carousel-indicators .active {
-        background-color: #ff0000;
-        /* Aktif nokta rengi */
-        opacity: 1;
-    }
 
-    /* Carousel Göstergelerini Carousel'in Altına Al */
-    .carousel-indicators {
-        border-radius: 15px;
-    }
+.carousel-indicators .active {
+    background-color: #ff0000;
+    /* Aktif nokta rengi */
+    opacity: 1;
+}
+
+/* Carousel Göstergelerini Carousel'in Altına Al */
+.carousel-indicators {
+    border-radius: 15px;
+}
 
 
 

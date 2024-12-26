@@ -141,11 +141,20 @@
 
     /* Carousel item'larının genişliğini ve padding'ini düzenle */
     .carousel2-item {
+        position: relative;
         width: calc(50% - 20px);
+        height: 175px;
         /* İki öğe yan yana gelsin, 20px boşluk bırak */
-        padding: 8px;
+        padding: 15px;
         box-sizing: border-box;
         /* Padding'i genişlik ve yüksekliğe dahil et */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        /* İçeriği dikeyde ortala */
+        align-items: center;
+        /* Yatayda ortala */
+
     }
 
     /* Carousel butonlarını responsive yap */
@@ -157,71 +166,68 @@
     /* Resimleri responsive yap */
     .carousel2-item>img {
         height: auto;
-        /* Resmin yüksekliğini otomatik yap */
         width: 30%;
-        /* Resmi kutunun genişliğine göre orantılı yap */
-        max-height: 50px;
+        margin-top: -50px;
+        max-height: 250px;
         /* Maksimum yükseklik 50px olacak */
-        margin-left: 0;
+        margin-left: 50;
         /* Margin'i sıfırladım */
     }
 
     /* Başlıkları responsive yap */
     .carousel2-item>h6 {
-        font-size: 10px;
-        margin-top: 60px;
-        /* Negatif margin yerine normal bir üst margin kullan */
-        margin-left: -10px;
+        font-size: 13px;
+        margin-top: -50px;
+        max-width: 100px;
+        margin-left: 75px;
     }
+
+
+
 
     /* Paragraf kutucuklarını responsive yap */
     .carousel2-item>p {
         position: absolute;
-        text-align: center;
-        font-size: 10px;
-        /* Yazı boyutunu biraz büyüt */
+        text-align: start;
+        font-size: 13px;
         height: auto;
-        /* Sabit yükseklik yerine içeriğe göre boyutlansın */
-        width: 80%;
-        /* Yüzde olarak genişlik, daha esnek olacak */
-        margin-left: 35px !important;
-        /* Ortalamak için margin-left ve right kullan */
-        margin-right: auto;
-        margin-top: 10px;
-        padding: 5px;
-        /* İçerik etrafına padding ekle */
+        margin-left: -55px !important;
+        margin-top: 115px !important;
         color: white;
-        /* Yazıyı beyaz yap */
+        max-width:50% !important;
+        
     }
 
-    /* Flex düzeni ile tüm öğeleri düzgün hizala */
-    .carousel2-item {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        /* İçeriği dikeyde ortala */
-        align-items: center;
-        /* Yatayda ortala */
+    .carousel-link {
+        position: absolute;
+        margin-left: 80% !important;
+        margin-top:40%;
+
     }
+
 }
 
 
-@media (max-width: 468px) {
+@media (max-width: 525px) {
     .carousel2-item {
         width: 100%;
-        padding: 5px;
+        padding:15px;
+        margin:  auto; /* Ortalar */
+        gap: 15px !important; /* Kutular arasına boşluk ekle */
     }
 
     .carousel2-item>img {
-        height: 55px;
-        width: 75px;
+        position: absolute;
+        height: 40%;
+        width: 20%;
+        margin-left: -155px;
     }
 
 
     .carousel2-item>p {
         position: absolute;
-        margin-top: 0px!important;
-        margin-left: 10px !important;
+        margin-top: 100px !important;
+        margin-left: -80px !important;
     }
 
 
@@ -230,4 +236,13 @@
         font-size: 12px;
         padding: 5px 8px;
     }
+
+    .carousel-link {
+        position: absolute;
+        margin-top:85px;
+        margin-left:200px !important;
+        
+
+    }
+
 }

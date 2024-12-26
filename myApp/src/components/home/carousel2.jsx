@@ -33,7 +33,7 @@ function Carousel2() {
   // Ekran boyutuna göre visibleCount'ı güncelleme
   useEffect(() => {
     const updateVisibleCount = () => {
-      if (window.innerWidth <= 480) {
+      if (window.innerWidth <= 525) {
         setVisibleCount(1); // Mobilde 1 öğe
       } else if (window.innerWidth <= 768) {
         setVisibleCount(2); // Küçük ekranlarda 2 öğe
@@ -86,7 +86,7 @@ function Carousel2() {
               <img src={item.logo} alt={`Logo ${index + 1}`} />
               <h6>{item.text}</h6>
               <p>{item.text2}</p>
-              <a href="#Link?"><img src={link1} alt="link" /></a>
+              <a class="carousel-link" href="#Link?"><img src={link1} alt="link" /></a>
             </div>
           ))}
         </div>
