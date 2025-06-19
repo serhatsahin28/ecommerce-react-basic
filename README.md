@@ -17,6 +17,6 @@ Bu proje, **React** ve **Bootstrap 5** kullanılarak geliştirilmiş basit bir *
 
 ## 🔗 Canlı Demo
 
-🌐 [Projeyi canlı görmek için tıklayın]([https://**kullaniciadi**.github.io/**repo-adi**](https://serhatsahin28.github.io/e-commerce/))
+🌐 [Projeyi canlı görmek için tıklayın]((https://serhatsahin28.github.io/e-commerce/))
 
 > Bu proje, kişisel öğrenme ve frontend geliştirme pratiği amacıyla hazırlanmıştır.
